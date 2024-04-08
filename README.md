@@ -24,9 +24,9 @@ private static extern void _startTracking();
 private static extern void _stopTracking();
 ```
 
-To send the tracked datas from Swift to Unity, already defined GameObject Name and FunctionNames in `iOS-Swift-Plugin/Source/UnityPlugin.swift` at line numbers `196, 201, 206`.
+To send the tracked datas from Swift to Unity, currently defined GameObject Name and FunctionNames in `iOS-Swift-Plugin/Source/UnityPlugin.swift` at line numbers `196, 201, 206` as follow:
 
-- `PluginHelper` - Current gameObject name in Hierarchy must be 
+- `PluginHelper` - Current gameObject name in Hierarchy
 - `OnReceivedRamUsage`, `OnReceivedCpuUsage`, `OnReceivedGpuUsage` - Current defined function names in Swift to call the following Unity C# functions with its parameter name `jsonString`:
 
 ```csharp
