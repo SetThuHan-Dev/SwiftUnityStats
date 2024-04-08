@@ -7,7 +7,7 @@
 ## Plugin Setup
 1. Clone this repo
 2. Create a Unity project version `2021+ or Newer`
-3. Create `Plugins` folder in `Assets` directory. Copy the `iOS-Swift-Plugin` folder from cloned repo into `Assets/Plugins`
+3. Create `Plugins` folder in `Assets` directory. Copy the `iOS-Swift-Plugin` folder in the cloned repo into `Assets/Plugins`
 
 To track iOS device's RAM, CPU and GPU usages, ```_startTracking``` and ```_stopTracking``` swift functions are already defined in `iOS-Swift-Plugin`.
 
