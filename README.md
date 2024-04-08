@@ -94,10 +94,10 @@ public class PluginHelper : MonoBehaviour
 ## Unity iOS Build Setup
 
 1. Make sure to change `Run in Xcode as` - `Release` -> `Debug` mode in `Build Settings`
-2. After built, open terminal at build folder and run `pod install` to generate `xcworkspace`. At first try, `pod install` will fail due to `Enable Bitcode` is set to `No` in `xcworkspace`
+2. After built, open terminal at build folder and run `pod install` to install `GPUUtilization` dependency and generate `xcworkspace`. At first try, `pod install` will fail to install the dependency due to `Enable Bitcode` is set to `No` in the newly generated `Unity-iPhone.xcworkspace`
 3. Open `Unity-iPhone.xcworkspace` and then `TARGETS -> Unity-iPhone -> Build Settings -> Enable Bitcode -> Yes`.
 4. Open terminal at built folder and try to run `pod install` again. In this time, installation success with "Pod installation complete!".
-5. Run the xcode for targeted iOS device.
+5. Wait for refresh in `Unity-iPhone.xcworkspace`, and Run the xcode for targeted iOS device.
 
 ## Unity Monitor Project
 
